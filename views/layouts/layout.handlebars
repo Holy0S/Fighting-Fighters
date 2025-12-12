@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<!--Header-->
+
+<head>
+    <!--Import Fancy Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+
+    <!--Get all that CSS stuff-->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Tell the Browser what character encoding to use to display webpage properly -->
+    <script charset="utf-8" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+    <script src="/js/cardTemplate.js"></script>
+</head>
+
+<body>
+    {{#unless noHeader}}
+        {{> header}}
+    {{/unless}}
+
+    {{{body}}}
+
+</body>
+
+</html>

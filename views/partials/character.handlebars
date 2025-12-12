@@ -1,0 +1,28 @@
+
+    <!-- This is the character class, this class will be populated with an individual character's information-->
+    <div class="character-option" id="c-option">
+
+        <div class="character-name" id="c-name">
+            {{name}}
+        </div>
+
+        <div class="character-image">
+            <button class="chosen-character">
+            <img src="{{photoURL}}" alt="image-of-character">
+            </button>
+        </div>
+
+        <div class="character-info" id="c-info">
+            {{description}}
+        </div>
+
+        <button class="p-1-selected" data-name="{{name}}">
+            Player One
+        </button>
+        <button class="p-2-selected" data-name="{{name}}">
+            Player Two
+        </button>
+        
+        <!-- This is all I could think to add for a character element, feel free to add additional information or stats as needed, or just contact me to ask for it-->
+
+    </div>

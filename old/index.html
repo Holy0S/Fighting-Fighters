@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<!--Header-->
+<head>
+    <!--Import Fancy Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--Get all that CSS stuff-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tell the Browser what character encoding to use to display webpage properly -->
+    <script charset="utf-8" defer></script>
+
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="stats-header-button">STATS</div>
+        <div class="game-header-button">GAME</div>
+        <div class="credits-header-button">CREDITS</div>
+    </div>
+
+    <!--Display where the game will be shown-->
+    <div class="game-display">
+    <!-- This large class is meant to contain all necessary elements on the side of Player One -->
+    <div class="player-one">
+        <!-- Player One Health and hero name box -->
+        <div class="player-one-info">
+
+            <!-- Player One Character Name display -->
+            <div class="player-one-character-name" id="one-name">
+                Player 1
+            </div>
+            <div class="player-one-health-bar">
+                <!--Empty, because the bar will just be the css element. Also, I have ideas on how to display this potentially using a scale element, not quite sure though-->
+           </div>
+             <!-- Player One Health Bar -->
+            <div class="player-one-health" id="one-health">
+                 20/20
+            </div>
+
+            <div class="player-one-energy" id="one-energy">
+                Energy: 4/6  <!--I'll go in and replace this once we get an energy image-->
+            </div>
+            
+            <div class="player-one-block-counter" id="one-block">
+                2 <!--I'll replace this with an image of a shield with a number when I get the chance-->
+            </div>
+
+        </div>
+
+        <!-- Player One's Character Image will be displayed here-->
+        <div class="player-one-character-picture">
+            <img src="images\player_one.jpg" alt="Player One Character Picture">
+        </div>
+
+    
+    <!-- This section encompasses the Player one deck, each card element may be added or removed as needed -->
+    <section class="player-one-deck" id="one-deck">
+
+        <!--Full Card Class-->
+        <div class="card">
+            <div class="card-content">
+                <!--Card Title-->
+                <div>
+                    <span class="card-title">Card Title</span>
+                </div>
+                <!--Card Image-->
+                <div class="card-image">
+                    <img src="images\sword.jpg">
+                </div>
+                <!--Card Description-->
+                <div class="card-description">
+                    <span class="description">This is the description of the card. It should have this description!</span>
+                </div>
+                 <!--Energy Cost Container-->
+                <div class="card-energy-cost-container">
+                    <span class="card-energy-cost">2</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="player-one-draw-and-discard-container">
+        <div class="draw-pile">
+            <div class="draw-pile-count" id="one-draw-pile-count">
+                13
+            </div>
+        </div>
+        <div class="discard-pile">
+            <div class="discard-pile-count" id="one-discard-pile-count">
+                2
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="end-turn-button" id="end-turn-button"> "End Turn" </button>
+
+    <!-- This large class is meant to contain all necessary elements on the side of Player Two (or cpu) -->
+    <div class="player-two">
+        <!-- Player Two Health and hero name box -->
+        <div class="player-two-info">
+            <!-- Player Two Character Name display -->
+            <div class="player-two-character-name" id="two-name">
+                Player 2
+                </div>
+            <!-- Player Two Health Bar -->
+            <div class="player-two-health-bar">
+                <!--Empty, because the bar will just be the css element. Also, I have ideas on how to display this potentially using a scale element, not quite sure though-->
+            </div>
+             <!-- Player Two Health Display -->
+            <div class="player-two-health" id="two-health">
+                 20/20
+            </div>
+
+            <div class="player-two-energy" id="two-energy">
+                Energy: 2/6
+            </div>
+
+            <div class="player-two-block-counter" id="two-block">
+                1
+            </div>
+
+        </div>
+
+        <!-- Player Two's Character Image will be displayed here-->
+        <div class="player-two-character-picture">
+            <img src="images\player_two.jpg" alt="Player Two Character Picture">
+        </div>
+
+    
+    <!-- This section encompasses the Player Two deck, each card element may be added or removed as needed -->
+    <section class="player-two-deck" id="two-deck">
+
+        <!--Full Card Class-->
+        <div class="card">
+            <div class="card-content">
+                <!--Card Title-->
+                <div>
+                    <span class="card-title">Card Title</span>
+                </div>
+                <!--Card Image-->
+                <div class="card-image">
+                    <img src="images\sword.jpg">
+                </div>
+                <!--Card Description-->
+                <div class="card-description">
+                    <span class="description">This is the description of the card. It should have this description!</span>
+                </div>
+                 <!--Energy Cost Container-->
+                <div class="card-energy-cost-container">
+                    <span class="card-energy-cost">2</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="player-two-draw-and-discard-container">
+        <div class="draw-pile">
+            <div class="draw-pile-count" id="two-draw-pile-count">
+                15
+            </div>
+        </div>
+        <div class="discard-pile">
+            <div class="discard-pile-count" id="two-discard-pile-count">
+                0
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+  </body>
+  </html>

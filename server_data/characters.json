@@ -1,0 +1,37 @@
+{
+  "Human": {
+    "name": "Human",
+    "photoURL": "/images/human.png",
+    "description": "The basic starter character. Passive: Heal for one at the start of your turn.",
+    "numPicks": 2,
+    "numWins": 1
+  },
+  "Soldier": {
+    "name": "Soldier",
+    "photoURL": "/images/soldier.png",
+    "description": "The best offense is a good defense. Passive: Only lose half of your block at the start of your turn instead of all of it.",
+    "numPicks": 3,
+    "numWins": 1
+  },
+  "Berserker": {
+    "name": "Berserker",
+    "photoURL": "/images/berserker.png",
+    "description": "The best offense is a good offense, right? Passive: When dropping to or below 10 health for the first time, immediately block for 5.",
+    "numPicks": 2,
+    "numWins": 1
+  },
+  "Wizard": {
+    "name": "Wizard",
+    "photoURL": "/images/wizard.png",
+    "description": "\"Phenomenal cosmic powers! Itty bitty living space!\". Passive: Gain an additional energy at the start of your turn if you have 0.",
+    "numPicks": 2,
+    "numWins": 1
+  },
+  "Ninja": {
+    "name": "Ninja",
+    "photoURL": "/images/ninja.png",
+    "description": "Slash your enemies to pieces. Passive: Gain one block after every attack that does damage to the enemies health directly.",
+    "numPicks": 3,
+    "numWins": 2
+  }
+}

@@ -1,0 +1,115 @@
+<script type="module" src="/js/main.js"></script>
+
+<!--Display where the game will be shown-->
+<div class="game-display">
+    <!-- This large class is meant to contain all necessary elements on the side of Player One -->
+    <div class="player-one">
+        <!-- Player One Health and hero name box -->
+        <div class="player-one-info">
+
+            <!-- Player One Character Name display -->
+            <div class="player-one-character-name" id="one-name">
+                Player 1
+            </div>
+            <div class="player-one-health-container">
+                
+                <div class="player-one-health-bar" id="one-health-bar"></div>
+                <!--Empty, because the bar will just be the css element. Also, I have ideas on how to display this potentially using a scale element, not quite sure though-->
+            </div>
+                <!-- Player One Health Bar -->
+            <div class="player-one-health" id="one-health">
+                    20/20
+            </div>
+
+            <div class="player-one-energy" id="one-energy">
+                Energy: 4/6  <!--I'll go in and replace this once we get an energy image-->
+            </div>
+            
+            <div class="player-one-block-counter" id="one-block">
+                2 <!--I'll replace this with an image of a shield with a number when I get the chance-->
+            </div>
+
+        </div>
+
+        <!-- Player One's Character Image will be displayed here-->
+        <div class="player-one-character-picture">
+            <img src="images\soldier.png" alt="Player One Character Picture" id="one-picture">
+        </div>
+
+
+    <!-- This section encompasses the Player one deck, each card element may be added or removed as needed -->
+    <section class="player-one-deck" id="one-deck">
+        <!--See Partial for Full Card Class-->
+    </section>
+    <div class="player-one-draw-and-discard-container">
+        <div class="draw-pile">
+            <div class="draw-pile-count" id="one-draw-pile-count">
+                13
+            </div>
+        </div>
+        <div class="discard-pile">
+            <div class="discard-pile-count" id="one-discard-pile-count">
+                2
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button type="end-turn-button" id="end-turn-button"> End Turn </button>
+
+    <!-- This large class is meant to contain all necessary elements on the side of Player Two (or cpu) -->
+    <div class="player-two">
+        <!-- Player Two Health and hero name box -->
+        <div class="player-two-info">
+            <!-- Player Two Character Name display -->
+            <div class="player-two-character-name" id="two-name">
+                Player 2
+                </div>
+            <!-- Player Two Health Bar -->
+            <div class="player-two-health-container">
+                <div class="player-one-health-bar" id="two-health-bar"></div>
+                <!--Empty, because the bar will just be the css element. Also, I have ideas on how to display this potentially using a scale element, not quite sure though-->
+            </div>
+                <!-- Player Two Health Display -->
+            <div class="player-two-health" id="two-health">
+                    20/20
+            </div>
+
+            <div class="player-two-energy" id="two-energy">
+                Energy: 2/6
+            </div>
+
+            <div class="player-two-block-counter" id="two-block">
+                1
+            </div>
+
+        </div>
+
+        <!-- Player Two's Character Image will be displayed here-->
+        <div class="player-two-character-picture">
+            <img src="images\wizard.png" alt="Player Two Character Picture" id="two-picture">
+        </div>
+
+
+    <!-- This section encompasses the Player Two deck, each card element may be added or removed as needed -->
+    <section class="player-two-deck" id="two-deck">
+        <!--See Partial for Full Card Class-->
+    </section>
+
+    <div class="player-two-draw-and-discard-container">
+        <div class="draw-pile">
+            <div class="draw-pile-count" id="two-draw-pile-count">
+                15
+            </div>
+        </div>
+        <div class="discard-pile">
+            <div class="discard-pile-count" id="two-discard-pile-count">
+                0
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+{{> gameover}}
+

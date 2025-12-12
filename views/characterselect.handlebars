@@ -1,0 +1,21 @@
+
+<!-- This is the horizontal box that will be populated with character objects -->
+<div class="character-select-box" id="c-select-box">
+
+<script src="charselect.js"></script>
+
+<!-- This is the character handlebar located in partials, feel free to add anything as needed or contact me to fix anything-->
+{{#each entries}}
+    {{> character}}
+{{/each}}
+
+
+<div class="game-start-link">
+    <a href="/game">
+        <button class="game-start-button" type="header-button">
+            Start Game
+        </button>
+    </a>
+</div>
+
+</div>
